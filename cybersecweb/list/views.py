@@ -3,21 +3,25 @@ from django.http import HttpResponse
 import datetime
 from django.http import JsonResponse
 import boto3
-session = boto3.Session()
+session = boto3.Session(profile_name='sec2') #profile_name='sec'
 
-#TODO tag resource
 
-def ec2instances(request):
+def ec2_instances(request):
     ec2 = session.client('ec2')
-    response = ec2.describe_instances() #TODO EBS
+    response = ec2.describe_instances()
     return JsonResponse(response)
 
-def s3buckets(request):
+def s3_buckets(request):
     s3 = session.client('s3')
-    response = s3.list_buckets() #TODO bucket regions
+    response = s3.list_buckets()
+    for bucket in response['Buckets']:
+        bucketRegion = s3.get_bucket_location(
+            Bucket=bucket['Name']
+        )
+        bucket['Region'] = bucketRegion
     return JsonResponse(response)
 
-def rdsdatabases(request):
+def rds_databases(request):
     rds = session.client('rds')
     response = rds.describe_db_instances()
     return JsonResponse(response)
@@ -27,7 +31,7 @@ def vpcs(request):
     response = ec2.describe_vpcs()
     return JsonResponse(response)
 
-def securitygroups(request):
+def security_groups(request):
     ec2 = session.client('ec2')
     response = ec2.describe_security_groups()
     return JsonResponse(response)
@@ -37,17 +41,20 @@ def lambdas(request):
     response = lmda.list_functions()
     return JsonResponse(response)
 
-def iamusers(request):
+def iam_users(request):
     iam = session.client('iam')
     response = iam.list_users()
-    return JsonResponse(response) #TODO list policies for users
+    for iamuser in response['Users']:
+        policies = iam.list_attached_user_policies(UserName=iamuser['UserName'])
+        iamuser['Policies'] = policies
+    return JsonResponse(response) 
 
-def iamgroups(request):
+def iam_groups(request):
     iam = session.client('iam')
     response = iam.list_groups()
     return JsonResponse(response)
 
-def iamroles(request):
+def iam_roles(request):
     iam = session.client('iam')
     response = iam.list_roles()
     return JsonResponse(response)
@@ -56,4 +63,17 @@ def policies(request):
     iam = session.client('iam')
     response = iam.list_policies()
     return JsonResponse(response)
+
+def accounts(request):
+    org = session.client('organizations')
+    response = org.list_accounts()
+    return JsonResponse(response)
+
+
+    #TODO test
+def organization_units(request):
+    org = session.client('organizations')
+    response = org.list_accounts()
+    return JsonResponse(response)
+
 

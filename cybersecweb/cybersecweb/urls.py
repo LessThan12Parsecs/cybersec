@@ -23,7 +23,9 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('list/', include('list.urls')),
+    path('s3/', include('s3.urls')),
     path('', RedirectView.as_view(url='list/', permanent=True)),
+    path('tag/', include('tag.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
