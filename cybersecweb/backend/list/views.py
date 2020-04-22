@@ -3,7 +3,7 @@ from django.http import HttpResponse
 import datetime
 from django.http import JsonResponse
 import boto3
-session = boto3.Session(profile_name='sec2') #profile_name='sec'
+session = boto3.Session(profile_name='sec') #profile_name='sec'
 
 
 def ec2_instances(request):
@@ -75,5 +75,7 @@ def organization_units(request):
     org = session.client('organizations')
     response = org.list_accounts()
     return JsonResponse(response)
+
+    
 
 

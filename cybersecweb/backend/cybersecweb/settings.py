@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'list',
     'tag',
     's3',
+    'ec2',
+    'orgs',
 ]
 
 MIDDLEWARE = [

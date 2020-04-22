@@ -13,4 +13,5 @@ urlpatterns = [
     path('iam_roles',views.iam_roles, name='iamroles'),
     path('policies',views.policies, name='policies'),
     path('accounts',views.accounts, name='accounts'),
+    # path('insecure_groups',views.insecure_groups, name='Open Security Groups'),
 ]
