@@ -20,12 +20,16 @@ from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('list/', include('list.urls')),
     path('s3/', include('s3.urls')),
     path('ec2/', include('ec2.urls')),
     path('orgs/', include('orgs.urls')),
+    path('rds/', include('rds.urls')),
+    path('iam/', include('iam.urls')),
+    path('lambdas/', include('lambdas.urls')),
     path('', RedirectView.as_view(url='list/', permanent=True)),
     path('tag/', include('tag.urls')),
 ]

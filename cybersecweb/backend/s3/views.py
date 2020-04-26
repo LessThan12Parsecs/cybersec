@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
+from django.conf import settings
 import boto3
-session = boto3.Session()
+session = boto3.Session(profile_name=settings.AWS_SETTINGS['credentials'])
 
 
 def encrypt_all(request):
@@ -55,4 +56,29 @@ def create_bucket(request,bucketName):
             ]
         }
     )
+    return JsonResponse(response)
+
+# Set public access block to account 
+def set_pab_to_account(request,accountId):
+    s3 = session.client('s3')
+    s3.put_public_access_block(
+        PublicAccessBlockConfiguration={
+            'BlockPublicAcls': True,
+            'IgnorePublicAcls': True,
+            'BlockPublicPolicy': True,
+            'RestrictPublicBuckets': True
+        },
+        AccountId=accountId
+    )
+    return HttpResponse("Account id" + accountId + " Has blocked public access to new S3 Buckets")
+
+
+def list_buckets(request):
+    s3 = session.client('s3')
+    response = s3.list_buckets()
+    for bucket in response['Buckets']:
+        bucketRegion = s3.get_bucket_location(
+            Bucket=bucket['Name']
+        )
+        bucket['Region'] = bucketRegion
     return JsonResponse(response)
