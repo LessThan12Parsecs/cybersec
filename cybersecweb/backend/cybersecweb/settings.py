@@ -128,5 +128,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AWS_SETTINGS = {
-    'credentials' : 'default',
+    'credentials' : 'sec3',
 }

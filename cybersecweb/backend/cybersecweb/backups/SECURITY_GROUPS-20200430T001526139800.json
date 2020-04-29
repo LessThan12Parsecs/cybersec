@@ -3,59 +3,7 @@
         {
             "Description": "Security group para las pruebas de quasar",
             "GroupName": "solo-443",
-            "IpPermissions": [
-                {
-                    "FromPort": 80,
-                    "IpProtocol": "tcp",
-                    "IpRanges": [
-                        {
-                            "CidrIp": "0.0.0.0/0"
-                        }
-                    ],
-                    "Ipv6Ranges": [
-                        {
-                            "CidrIpv6": "::/0"
-                        }
-                    ],
-                    "PrefixListIds": [],
-                    "ToPort": 80,
-                    "UserIdGroupPairs": []
-                },
-                {
-                    "FromPort": 22,
-                    "IpProtocol": "tcp",
-                    "IpRanges": [
-                        {
-                            "CidrIp": "0.0.0.0/0"
-                        }
-                    ],
-                    "Ipv6Ranges": [
-                        {
-                            "CidrIpv6": "::/0"
-                        }
-                    ],
-                    "PrefixListIds": [],
-                    "ToPort": 22,
-                    "UserIdGroupPairs": []
-                },
-                {
-                    "FromPort": 443,
-                    "IpProtocol": "tcp",
-                    "IpRanges": [
-                        {
-                            "CidrIp": "0.0.0.0/0"
-                        }
-                    ],
-                    "Ipv6Ranges": [
-                        {
-                            "CidrIpv6": "::/0"
-                        }
-                    ],
-                    "PrefixListIds": [],
-                    "ToPort": 443,
-                    "UserIdGroupPairs": []
-                }
-            ],
+            "IpPermissions": [],
             "OwnerId": "696694800604",
             "GroupId": "sg-017812d1c31def71f",
             "IpPermissionsEgress": [
@@ -163,6 +111,12 @@
                     "UserIdGroupPairs": []
                 }
             ],
+            "Tags": [
+                {
+                    "Key": "vulnerability",
+                    "Value": "OPEN"
+                }
+            ],
             "VpcId": "vpc-0b5766951c397a194"
         },
         {
@@ -200,6 +154,12 @@
                     "Ipv6Ranges": [],
                     "PrefixListIds": [],
                     "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "vulnerability",
+                    "Value": "OPEN"
                 }
             ],
             "VpcId": "vpc-0b5766951c397a194"
@@ -254,6 +214,12 @@
                     "UserIdGroupPairs": []
                 }
             ],
+            "Tags": [
+                {
+                    "Key": "vulnerability",
+                    "Value": "OPEN"
+                }
+            ],
             "VpcId": "vpc-056ce43bb188af6df"
         },
         {
@@ -287,6 +253,12 @@
                     "Ipv6Ranges": [],
                     "PrefixListIds": [],
                     "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "vulnerability",
+                    "Value": "OPEN"
                 }
             ],
             "VpcId": "vpc-056ce43bb188af6df"
@@ -323,6 +295,12 @@
                     "UserIdGroupPairs": []
                 }
             ],
+            "Tags": [
+                {
+                    "Key": "vulnerability",
+                    "Value": "OPEN"
+                }
+            ],
             "VpcId": "vpc-056ce43bb188af6df"
         },
         {
@@ -357,18 +335,24 @@
                     "UserIdGroupPairs": []
                 }
             ],
+            "Tags": [
+                {
+                    "Key": "vulnerability",
+                    "Value": "OPEN"
+                }
+            ],
             "VpcId": "vpc-0b5766951c397a194"
         }
     ],
     "ResponseMetadata": {
-        "RequestId": "ef1d644e-bfd5-4f34-a20c-ebf15b2e8eb0",
+        "RequestId": "8153310d-d707-4aae-abec-802d0595ff7b",
         "HTTPStatusCode": 200,
         "HTTPHeaders": {
-            "x-amzn-requestid": "ef1d644e-bfd5-4f34-a20c-ebf15b2e8eb0",
+            "x-amzn-requestid": "8153310d-d707-4aae-abec-802d0595ff7b",
             "content-type": "text/xml;charset=UTF-8",
             "transfer-encoding": "chunked",
             "vary": "accept-encoding",
-            "date": "Wed, 29 Apr 2020 20:38:58 GMT",
+            "date": "Wed, 29 Apr 2020 22:15:27 GMT",
             "server": "AmazonEC2"
         },
         "RetryAttempts": 0

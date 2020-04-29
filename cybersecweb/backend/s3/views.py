@@ -78,6 +78,7 @@ def list_buckets(request):
     s3 = session.client('s3')
     response = s3.list_buckets()
     for bucket in response['Buckets']: # YOU CAN GET A LOT OF THINGS FROM BUCKETS
+
         bucketRegion = s3.get_bucket_location(
             Bucket=bucket['Name']
         )
@@ -88,22 +89,28 @@ def list_buckets(request):
         # )
         # bucket['Policy'] = bucketPolicy
 
-        bucketEncryption = s3.get_bucket_encryption(
-            Bucket=bucket['Name']
-        )
-        bucket['Encryption'] = bucketEncryption
+        try:
+            bucketEncryption = s3.get_bucket_encryption(
+                Bucket=bucket['Name']
+            )
+            bucket['Encryption'] = bucketEncryption
+
+        except: #TODO: not really, could be other exceptions 
+            bucket['Encryption'] = 'NONE'
     store(response,'S3BUCKETS')
     return JsonResponse(response)
 
-def list__unencrypted_buckets(request):
+def list_unencrypted_buckets(request):
     s3 = session.client('s3')
     response = s3.list_buckets()
-    unencryptedBuckets = 
+    unencryptedBuckets = [{}]
     for bucket in response['Buckets']: # YOU CAN GET A LOT OF THINGS FROM BUCKETS
-        bucketEncryption = s3.get_bucket_encryption(
-            Bucket=bucket['Name']
-        )
-        bucket['Encryption'] = bucketEncryption
-
-    store(response,'S3BUCKETS')
-    return JsonResponse(response)
+        try:
+            bucketEncryption = s3.get_bucket_encryption(
+                Bucket=bucket['Name']
+            )
+            bucket['Encryption'] = bucketEncryption
+        except: #TODO: not really, could be other exceptions 
+            bucket['Encryption'] = 'NONE'
+            unencryptedBuckets.append(bucket)
+    return JsonResponse({'Result':unencryptedBuckets}) #TODO not sure this is right
