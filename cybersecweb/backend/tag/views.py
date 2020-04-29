@@ -24,3 +24,20 @@ def ec2_instance(request, id, key, value):
 
 def close_sg_and_tag(request):
      return HttpResponse("Closed ")
+
+
+def tag_resource(id,key,value):
+    ec2 = session.client('ec2')
+    ec2.create_tags(
+        DryRun=False,
+        Resources=[
+            id,
+        ],
+        Tags=[
+            {
+                'Key':key,
+                'Value':value
+            },
+        ]
+    )
+    return 1

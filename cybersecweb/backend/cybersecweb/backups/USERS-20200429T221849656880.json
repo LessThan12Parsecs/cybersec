@@ -1,0 +1,282 @@
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "administrador",
+            "UserId": "AIDA2ENR7ADOEQBT2YV75",
+            "Arn": "arn:aws:iam::696694800604:user/administrador",
+            "CreateDate": "2020-04-24T08:23:58Z",
+            "Policies": {
+                "AttachedPolicies": [
+                    {
+                        "PolicyName": "AdministratorAccess",
+                        "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                    }
+                ],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "184cec09-4052-441a-a16d-09a06248f775",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "184cec09-4052-441a-a16d-09a06248f775",
+                        "content-type": "text/xml",
+                        "content-length": "542",
+                        "date": "Wed, 29 Apr 2020 20:18:50 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            },
+            "Groups": {
+                "Groups": [],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "9e790fd7-7f24-4329-b836-1db602490ca6",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "9e790fd7-7f24-4329-b836-1db602490ca6",
+                        "content-type": "text/xml",
+                        "content-length": "322",
+                        "date": "Wed, 29 Apr 2020 20:18:50 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            }
+        },
+        {
+            "Path": "/",
+            "UserName": "becario1",
+            "UserId": "AIDA2ENR7ADOH5ILKNQK7",
+            "Arn": "arn:aws:iam::696694800604:user/becario1",
+            "CreateDate": "2020-04-24T08:24:41Z",
+            "Policies": {
+                "AttachedPolicies": [],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "7ad072c3-9620-413b-97d2-9c2090f8350c",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "7ad072c3-9620-413b-97d2-9c2090f8350c",
+                        "content-type": "text/xml",
+                        "content-length": "360",
+                        "date": "Wed, 29 Apr 2020 20:18:50 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            },
+            "Groups": {
+                "Groups": [
+                    {
+                        "Path": "/",
+                        "GroupName": "becarios",
+                        "GroupId": "AGPA2ENR7ADOG2GYG4MVT",
+                        "Arn": "arn:aws:iam::696694800604:group/becarios",
+                        "CreateDate": "2020-04-24T08:24:16Z"
+                    }
+                ],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "1e1e992f-1851-4662-803e-4924d0cb0096",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "1e1e992f-1851-4662-803e-4924d0cb0096",
+                        "content-type": "text/xml",
+                        "content-length": "592",
+                        "date": "Wed, 29 Apr 2020 20:18:50 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            }
+        },
+        {
+            "Path": "/",
+            "UserName": "lector-s3",
+            "UserId": "AIDA2ENR7ADOONDKSQZH5",
+            "Arn": "arn:aws:iam::696694800604:user/lector-s3",
+            "CreateDate": "2020-04-24T08:27:23Z",
+            "Policies": {
+                "AttachedPolicies": [
+                    {
+                        "PolicyName": "politica-para-leer-buckets",
+                        "PolicyArn": "arn:aws:iam::696694800604:policy/politica-para-leer-buckets"
+                    }
+                ],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "e193dd63-9d08-47a5-a8b2-d6a11b02b57a",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "e193dd63-9d08-47a5-a8b2-d6a11b02b57a",
+                        "content-type": "text/xml",
+                        "content-length": "565",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            },
+            "Groups": {
+                "Groups": [],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "4a3f76a4-4579-4fff-b9c9-919dddfe4459",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "4a3f76a4-4579-4fff-b9c9-919dddfe4459",
+                        "content-type": "text/xml",
+                        "content-length": "322",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            }
+        },
+        {
+            "Path": "/",
+            "UserName": "luke.skywalker",
+            "UserId": "AIDA2ENR7ADOKLEFCL4IX",
+            "Arn": "arn:aws:iam::696694800604:user/luke.skywalker",
+            "CreateDate": "2020-04-24T08:25:36Z",
+            "Policies": {
+                "AttachedPolicies": [],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "620bcb45-94b3-4e2d-be23-57b636d7d2be",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "620bcb45-94b3-4e2d-be23-57b636d7d2be",
+                        "content-type": "text/xml",
+                        "content-length": "360",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            },
+            "Groups": {
+                "Groups": [
+                    {
+                        "Path": "/",
+                        "GroupName": "devops",
+                        "GroupId": "AGPA2ENR7ADOBOBCT4ZKD",
+                        "Arn": "arn:aws:iam::696694800604:group/devops",
+                        "CreateDate": "2020-04-24T08:25:06Z"
+                    }
+                ],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "8a97129e-3080-4258-8a20-53945507e94d",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "8a97129e-3080-4258-8a20-53945507e94d",
+                        "content-type": "text/xml",
+                        "content-length": "588",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            }
+        },
+        {
+            "Path": "/",
+            "UserName": "obi-wan.kenobi",
+            "UserId": "AIDA2ENR7ADOKQN7N2K2L",
+            "Arn": "arn:aws:iam::696694800604:user/obi-wan.kenobi",
+            "CreateDate": "2020-04-24T08:40:17Z",
+            "Policies": {
+                "AttachedPolicies": [
+                    {
+                        "PolicyName": "AmazonAPIGatewayInvokeFullAccess",
+                        "PolicyArn": "arn:aws:iam::aws:policy/AmazonAPIGatewayInvokeFullAccess"
+                    }
+                ],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "25408ef8-8b3f-4df0-b441-480a312e0d95",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "25408ef8-8b3f-4df0-b441-480a312e0d95",
+                        "content-type": "text/xml",
+                        "content-length": "568",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            },
+            "Groups": {
+                "Groups": [
+                    {
+                        "Path": "/",
+                        "GroupName": "devops",
+                        "GroupId": "AGPA2ENR7ADOBOBCT4ZKD",
+                        "Arn": "arn:aws:iam::696694800604:group/devops",
+                        "CreateDate": "2020-04-24T08:25:06Z"
+                    }
+                ],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "1c48eac1-7161-4a5f-a7d9-03333dd10672",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "1c48eac1-7161-4a5f-a7d9-03333dd10672",
+                        "content-type": "text/xml",
+                        "content-length": "588",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            }
+        },
+        {
+            "Path": "/",
+            "UserName": "rancher",
+            "UserId": "AIDA2ENR7ADODAVVGDMDF",
+            "Arn": "arn:aws:iam::696694800604:user/rancher",
+            "CreateDate": "2020-04-25T18:05:02Z",
+            "Policies": {
+                "AttachedPolicies": [
+                    {
+                        "PolicyName": "AdministratorAccess",
+                        "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                    }
+                ],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "a2c82986-33c1-451b-9398-d38dac353f94",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "a2c82986-33c1-451b-9398-d38dac353f94",
+                        "content-type": "text/xml",
+                        "content-length": "542",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            },
+            "Groups": {
+                "Groups": [],
+                "IsTruncated": false,
+                "ResponseMetadata": {
+                    "RequestId": "49502bcc-079f-459f-8340-1484070c8952",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amzn-requestid": "49502bcc-079f-459f-8340-1484070c8952",
+                        "content-type": "text/xml",
+                        "content-length": "322",
+                        "date": "Wed, 29 Apr 2020 20:18:51 GMT"
+                    },
+                    "RetryAttempts": 0
+                }
+            }
+        }
+    ],
+    "IsTruncated": false,
+    "ResponseMetadata": {
+        "RequestId": "43920eaf-4f17-4847-9dcd-b305c90fc2a9",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amzn-requestid": "43920eaf-4f17-4847-9dcd-b305c90fc2a9",
+            "content-type": "text/xml",
+            "content-length": "1847",
+            "date": "Wed, 29 Apr 2020 20:18:50 GMT"
+        },
+        "RetryAttempts": 0
+    }
+}

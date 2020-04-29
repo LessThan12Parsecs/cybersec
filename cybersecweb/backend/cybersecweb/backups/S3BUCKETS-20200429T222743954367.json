@@ -1,0 +1,63 @@
+{
+    "ResponseMetadata": {
+        "RequestId": "ED761FDAE2925C64",
+        "HostId": "TddsIiZg4Ns4Y+q/DdZ/qXMAkl98P3vZtDJEtEgroEo7NZlpRyzOhnhyzdL7hpDdS3iNdvPS0+U=",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amz-id-2": "TddsIiZg4Ns4Y+q/DdZ/qXMAkl98P3vZtDJEtEgroEo7NZlpRyzOhnhyzdL7hpDdS3iNdvPS0+U=",
+            "x-amz-request-id": "ED761FDAE2925C64",
+            "date": "Wed, 29 Apr 2020 20:27:47 GMT",
+            "content-type": "application/xml",
+            "transfer-encoding": "chunked",
+            "server": "AmazonS3"
+        },
+        "RetryAttempts": 0
+    },
+    "Buckets": [
+        {
+            "Name": "cosas-cifradas",
+            "CreationDate": "2020-04-24T08:17:00Z",
+            "Region": {
+                "ResponseMetadata": {
+                    "RequestId": "C21B5D6BFBD19E15",
+                    "HostId": "WKGiNtIT+PisQ+OONwx8C21AULl7Sync2IJAzfmhib0JQ42f8vrcm36RYCAY8y4mMGmvHYAyQp0=",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amz-id-2": "WKGiNtIT+PisQ+OONwx8C21AULl7Sync2IJAzfmhib0JQ42f8vrcm36RYCAY8y4mMGmvHYAyQp0=",
+                        "x-amz-request-id": "C21B5D6BFBD19E15",
+                        "date": "Wed, 29 Apr 2020 20:27:47 GMT",
+                        "content-type": "application/xml",
+                        "transfer-encoding": "chunked",
+                        "server": "AmazonS3"
+                    },
+                    "RetryAttempts": 0
+                },
+                "LocationConstraint": "eu-west-1"
+            }
+        },
+        {
+            "Name": "nominas-super-secretas",
+            "CreationDate": "2020-04-24T08:16:13Z",
+            "Region": {
+                "ResponseMetadata": {
+                    "RequestId": "7DAFCE7CDE5C9EF2",
+                    "HostId": "s/2xZpmFtCKAUltCfaar3y4wejKfmyrRZPMgyhNBEMlMAEjQmmi9PID9x7KU5RWojhHGbBa3pKI=",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amz-id-2": "s/2xZpmFtCKAUltCfaar3y4wejKfmyrRZPMgyhNBEMlMAEjQmmi9PID9x7KU5RWojhHGbBa3pKI=",
+                        "x-amz-request-id": "7DAFCE7CDE5C9EF2",
+                        "date": "Wed, 29 Apr 2020 20:27:47 GMT",
+                        "content-type": "application/xml",
+                        "transfer-encoding": "chunked",
+                        "server": "AmazonS3"
+                    },
+                    "RetryAttempts": 0
+                },
+                "LocationConstraint": "eu-west-1"
+            }
+        }
+    ],
+    "Owner": {
+        "ID": "8e56c2c6aae028bee2b3fa78524dd60676077315350b2856f14d42318ae12825"
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "ResponseMetadata": {
+        "RequestId": "2A77EF791244F27C",
+        "HostId": "WbLd64tiM8xW+LW33TL24Zl2gAiiIvZKHveqKgmmidkqzMgwsbQPSPCjuww+RDp93HOUia3aKa8=",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amz-id-2": "WbLd64tiM8xW+LW33TL24Zl2gAiiIvZKHveqKgmmidkqzMgwsbQPSPCjuww+RDp93HOUia3aKa8=",
+            "x-amz-request-id": "2A77EF791244F27C",
+            "date": "Wed, 29 Apr 2020 20:31:35 GMT",
+            "content-type": "application/xml",
+            "transfer-encoding": "chunked",
+            "server": "AmazonS3"
+        },
+        "RetryAttempts": 0
+    },
+    "Buckets": [
+        {
+            "Name": "api-test-123",
+            "CreationDate": "2020-04-21T22:00:19Z",
+            "Region": {
+                "ResponseMetadata": {
+                    "RequestId": "8758B69865CB5F8A",
+                    "HostId": "NcxpbsT6hq+xIwXpSrFN97TBtp6ZHv5mSl+AivfMIqT5nU7RfdknXWYcZrb6lH2RN+0czkRGwqw=",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amz-id-2": "NcxpbsT6hq+xIwXpSrFN97TBtp6ZHv5mSl+AivfMIqT5nU7RfdknXWYcZrb6lH2RN+0czkRGwqw=",
+                        "x-amz-request-id": "8758B69865CB5F8A",
+                        "date": "Wed, 29 Apr 2020 20:31:35 GMT",
+                        "content-type": "application/xml",
+                        "transfer-encoding": "chunked",
+                        "server": "AmazonS3"
+                    },
+                    "RetryAttempts": 0
+                },
+                "LocationConstraint": "eu-west-1"
+            }
+        },
+        {
+            "Name": "my-test-bucket-erc",
+            "CreationDate": "2020-04-21T20:02:47Z",
+            "Region": {
+                "ResponseMetadata": {
+                    "RequestId": "4886E5C179F3F453",
+                    "HostId": "vSFIOPTICelU1PNlzUUfBel+H+2Vbopz7JajVuSKWBrFIjrvmG/RSnDKjrqeDoBAfChxCICUmos=",
+                    "HTTPStatusCode": 200,
+                    "HTTPHeaders": {
+                        "x-amz-id-2": "vSFIOPTICelU1PNlzUUfBel+H+2Vbopz7JajVuSKWBrFIjrvmG/RSnDKjrqeDoBAfChxCICUmos=",
+                        "x-amz-request-id": "4886E5C179F3F453",
+                        "date": "Wed, 29 Apr 2020 20:31:35 GMT",
+                        "content-type": "application/xml",
+                        "transfer-encoding": "chunked",
+                        "server": "AmazonS3"
+                    },
+                    "RetryAttempts": 0
+                },
+                "LocationConstraint": "eu-west-1"
+            }
+        }
+    ],
+    "Owner": {
+        "DisplayName": "jmblanco",
+        "ID": "d1a64e2e8d40ff521fe75ecfa336c738d6fc4199b04806fa001518f204461e17"
+    }
+}
